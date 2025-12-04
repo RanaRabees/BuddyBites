@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Buddy-Bites | Menu</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/loader.css">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+
+<body>
+    <!-- Loader Component  -->
+    <div id="loader">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+        <div class="typing">
+            <h1>Welcome</h1>
+        </div>
+    </div>
+    <!-- Loader Component End -->
+
+    <!-- MOBILE NAV -->
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="./index.html">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="./about.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#food-menu-section">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="./contact.html">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+    <!-- END MOBILE NAV -->
+
+    <!-- BACK TO TOP BTN -->
+    <a href="./index.html" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <!-- END BACK TO TOP BTN -->
+
+    <!-- TOP NAVIGATION -->
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="./index.html">
+                <div class="logo">Buddy Bites</div>
+            </a>
+
+            <div class="menu h-xs">
+                <a href="./index.html">
+                    <div class="menu-item active">Home</div>
+                </a>
+                <a href="./about.html">
+                    <div class="menu-item">About</div>
+                </a>
+                <a href="./menu.html">
+                    <div class="menu-item">Menu</div>
+                </a>
+                <a href="./contact.html">
+                    <div class="menu-item">Contact</div>
+                </a>
+            </div>
+
+            <div class="right-menu">
+                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+            </div>
+        </div>
+    </div>
+    <!-- END TOP NAVIGATION -->
+
+    <!-- FOOD MENU SECTION -->
+
+    <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
+        style="background-image: url(./images/menu-back.jpg);">
+        <div class="container">
+            <div class="food-menu">
+                <h1>What will <span class="primary-color">you</span> eat today?</h1>
+                <p>
+                    Craving something delicious? Get ready to treat your taste buds to a flavor explosion! From crispy,
+                    golden fries to gooey, melt-in-your-mouth desserts, every bite is an adventure. Dig into savory
+                    snacks packed with bold spices, indulge in creamy, dreamy sweets, or discover exciting new flavors
+                    that surprise and delight. Whether you’re craving a quick bite, a hearty feast, or a little sweet
+                    escape, our menu has it all—fresh, fun, and utterly irresistible. Snack, savor, smile,
+                    repeat—because life’s too short for boring bites! 🌮🍩🍕
+                </p>
+                <div class="food-category">
+                    <div class="zoom play-on-scroll">
+                        <button class="active" data-food-type="all">
+                            All foods
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="trend">
+                            Trending Foods
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-2">
+                        <button data-food-type="fast">
+                            Fast Foods
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="desi">
+                            Desi Foods
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-4">
+                        <button data-food-type="chinese">
+                            Chinese Foods
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-6">
+                        <button data-food-type="italian">
+                            Italian Foods
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="watery">
+                            Hydrating Foods
+                        </button>
+                    </div>
+                </div>
+                <br>
+                <div class="food-category">
+
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="drinks">
+                            Drinks
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="sweets">
+                            Sweets
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="deserts">
+                            Deserts
+                        </button>
+                    </div>
+
+                </div>
+                <div class="food-item-wrap all" id="food-items-container">
+                    <div class="food-item trend-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Chicken-Malai-Boti.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Chicken Malai Boti</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.750</span>
+                                        <span class="new-price">Rs.690</span><br>
+                                        <span class="discount-percent">8% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item fast-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Chicken-Shawarma.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Chicken Shawarma</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.420</span>
+                                        <span class="new-price">Rs.360</span><br>
+                                        <span class="discount-percent">15% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item chinese-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('./images/Chow-Mein.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Chicken Chow Mein</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.750</span>
+                                        <span class="new-price">Rs.680</span><br>
+                                        <span class="discount-percent">9% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item italian-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Margherita-Pizza.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Margherita Pizza</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.1100</span>
+                                        <span class="new-price">Rs.950</span><br>
+                                        <span class="discount-percent">14% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item desi-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Chicken-Karahi.jpg');"></div>
+                            </div>
+
+                            <div class="item-info">
+                                <div>
+                                    <h3>Chicken Karahi</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.1200</span>
+                                        <span class="new-price">Rs.1050</span><br>
+                                        <span class="discount-percent">13% OFF</span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item watery-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Fried-Fish.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Fried Fish</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.600</span>
+                                        <span class="new-price">Rs.550</span><br>
+                                        <span class="discount-percent">8% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item drinks-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Kashmiri-Chai.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Kashmiri Chai</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.100</span>
+                                        <span class="new-price">Rs.85</span><br>
+                                        <span class="discount-percent">15% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item sweets-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Gulab-Jamun.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Gulab Jamun</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.250</span>
+                                        <span class="new-price">Rs.220</span><br>
+                                        <span class="discount-percent">12% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item deserts-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('./images/Rasmalai.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Rasmalai</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.250</span>
+                                        <span class="new-price">Rs.225</span><br>
+                                        <span class="discount-percent">10% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item trend-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Beef-Pulao.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Beef Pulao</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.450</span>
+                                        <span class="new-price">Rs.400</span><br>
+                                        <span class="discount-percent">11% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item fast-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Cheese-Fries.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Loaded Fries</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.550</span>
+                                        <span class="new-price">Rs.480</span><br>
+                                        <span class="discount-percent">12% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item chinese-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Chicken-Manchurian.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Chicken Manchurian</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.850</span>
+                                        <span class="new-price">Rs.765</span><br>
+                                        <span class="discount-percent">10% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item italian-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Alfredo-Pasta.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Alfredo Pasta</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.850</span>
+                                        <span class="new-price">Rs.780</span><br>
+                                        <span class="discount-percent">8% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item desi-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Chicken-Biryani.jpg');"></div>
+                            </div>
+
+                            <div class="item-info">
+                                <div>
+                                    <h3>Chicken Biryani</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.380</span>
+                                        <span class="new-price">Rs.340</span><br>
+                                        <span class="discount-percent">11% OFF</span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item watery-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('./images/Tawa-Fry.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Tawa Fry Fish</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.650</span>
+                                        <span class="new-price">Rs.600</span><br>
+                                        <span class="discount-percent">8% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item drinks-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('./images/Rooh-Afza.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Rooh Afza</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.200</span>
+                                        <span class="new-price">Rs.180</span><br>
+                                        <span class="discount-percent">10% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item sweets-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('./images/Jalebi.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Jalebi</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.180</span>
+                                        <span class="new-price">Rs.150</span><br>
+                                        <span class="discount-percent">17% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item deserts-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Gajar-Halwa.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Gajar Halwa</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.250</span>
+                                        <span class="new-price">Rs.220</span><br>
+                                        <span class="discount-percent">12% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item trend-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/White-Karahi.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>White Karahi</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.1200</span>
+                                        <span class="new-price">Rs.1100</span><br>
+                                        <span class="discount-percent">8% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item fast-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Crunchy-Broast.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Crunchy Broast</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.750</span>
+                                        <span class="new-price">Rs.670</span><br>
+                                        <span class="discount-percent">11% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item chinese-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Fried-Rice.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Special Fried Rice</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.650</span>
+                                        <span class="new-price">Rs.590</span><br>
+                                        <span class="discount-percent">9% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item italian-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Italian-Quinoa-Salad.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Italian Quinoa Salad</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.520</span>
+                                        <span class="new-price">Rs.470</span><br>
+                                        <span class="discount-percent">10% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item desi-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Chicken-Seekh-Kabab.jpg');"></div>
+                            </div>
+
+                            <div class="item-info">
+                                <div>
+                                    <h3>Seekh Kabab</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.650</span>
+                                        <span class="new-price">Rs.590</span><br>
+                                        <span class="discount-percent">9% OFF</span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item watery-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Fish-Curry.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Fish Curry</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.700</span>
+                                        <span class="new-price">Rs.630</span><br>
+                                        <span class="discount-percent">10% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item drinks-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Sugarcane-juice.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Sugarcane juice,</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.150</span>
+                                        <span class="new-price">Rs.130</span><br>
+                                        <span class="discount-percent">13% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item sweets-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('./images/Rasgulla.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Rasgulla</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.220</span>
+                                        <span class="new-price">Rs.200</span><br>
+                                        <span class="discount-percent">9% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item deserts-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Badami-Kulfi.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Badami-Kulfi</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.110</span>
+                                        <span class="new-price">Rs.85</span><br>
+                                        <span class="discount-percent">1% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item trend-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Behari-Kabab-Roll.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Behari Kabab Roll</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.350</span>
+                                        <span class="new-price">Rs.320</span><br>
+                                        <span class="discount-percent">9% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item fast-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/BBQ-Chicken-Pizza.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>BBQ Pizza Slice</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.320</span>
+                                        <span class="new-price">Rs.280</span><br>
+                                        <span class="discount-percent">13% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class="bx bx-cart-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item chinese-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/HotSourSoup.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Hot & Sour Soup</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.480</span>
+                                        <span class="new-price">Rs.430</span><br>
+                                        <span class="discount-percent">10% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item italian-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/spaghetti-bolognese.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Spaghetti Bolognese</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.920</span>
+                                        <span class="new-price">Rs.850</span><br>
+                                        <span class="discount-percent">8% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn">
+                                    <i class='bx bx-cart-alt'></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item desi-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('./images/Haleem.jpg');">
+                                </div>
+                            </div>
+
+                            <div class="item-info">
+                                <div>
+                                    <h3>Haleem</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.300</span>
+                                        <span class="new-price">Rs.270</span><br>
+                                        <span class="discount-percent">10% OFF</span>
+                                    </div>
+                                </div>
+
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item watery-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Prawn-Masala.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Prawn Masala</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.800</span>
+                                        <span class="new-price">Rs.720</span><br>
+                                        <span class="discount-percent">10% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item drinks-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('./images/Lassi.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Lassi</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.120</span>
+                                        <span class="new-price">Rs.100</span><br>
+                                        <span class="discount-percent">17% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item sweets-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img" style="background-image: url('./images/Kheer.jpg');">
+                                </div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Kheer</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.200</span>
+                                        <span class="new-price">Rs.180</span><br>
+                                        <span class="discount-percent">10% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item deserts-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Eminabadi-Barfi.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Eminabadi Barfi</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.220</span>
+                                        <span class="new-price">Rs.200</span><br>
+                                        <span class="discount-percent">9% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item trend-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Shinwari-Karahi.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Shinwari Karahi</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.1300</span>
+                                        <span class="new-price">Rs.1180</span><br>
+                                        <span class="discount-percent">9% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="food-item trend-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('./images/Beef-Nihari.jpg');"></div>
+                            </div>
+                            <div class="item-info">
+                                <div>
+                                    <h3>Nihari</h3>
+                                    <div class="price">
+                                        <span class="old-price">Rs.650</span>
+                                        <span class="new-price">Rs.600</span><br>
+                                        <span class="discount-percent">8% OFF</span>
+                                    </div>
+                                </div>
+                                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <!-- Pagination -->
+                <div class="pagination" id="pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- END FOOD MENU SECTION -->
+
+    <!-- FOOTER SECTION -->
+    <section class="footer bg-img" style="background-image: url('./images/footerpic.jpg'); background-size: 100% 100%;">
+        <div class="container" style="inset: 0; background: rgba(0,0,0,0.55);">
+            <div class="row">
+
+                <!-- Brand Column -->
+                <div class="col-6 col-xs-12">
+                    <h1>Buddy-Bites</h1>
+                    <p class="tagline">“Where Flavor Meets Happiness.”</p>
+                    <p>
+                        Buddy-Bites is your sanctuary for exceptional taste, comforting flavors, and heartfelt
+                        moments.
+                        We believe that great food has the power to transform your day, and every bite we serve is
+                        designed to elevate your mood, refresh your spirit, and make the ordinary feel
+                        extraordinary.
+                    </p>
+                    <p class="footer-contact">
+                        Email: <a href="mailto:rrabeeshussain@gmail.com">buddybites@gmail.com</a><br>
+                        Website: <a href="https://ranarabees.vercel.app">buddy-bites.com</a>
+                    </p>
+                </div>
+
+                <!-- Links Column -->
+                <div class="col-2 col-xs-12">
+                    <h2>Explore</h1>
+                        <p><a href="#">Our Chefs</a></p>
+                        <p><a href="#">Menu</a></p>
+                        <p><a href="#">Contact</a></p>
+                        <p><a href="#">Special Offers</a></p>
+                </div>
+
+                <!-- Subscribe Column -->
+                <div class="col-4 col-xs-12">
+                    <h2>Stay Connected</h1>
+                        <p>
+                            Join our foodie family! Get the latest deals, flavor drops, and tasty surprises—straight
+                            to
+                            your inbox.
+                        </p>
+                        <div class="input-group">
+                            <input type="text" placeholder="Enter your email">
+                            <button>Subscribe</button>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END FOOTER SECTION -->
+
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

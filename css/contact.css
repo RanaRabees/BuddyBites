@@ -1,0 +1,200 @@
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #f8f8f8;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* new contact wrapper */
+.contact-sec-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* section */
+#contact-sec-renamed {
+    padding: 70px 0;
+}
+
+.contact-title-box {
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.contact-sub {
+    display: block;
+    font-family: "Great Vibes", serif;
+    color: #9d0f0f;
+    font-size: 36px;
+    line-height: 1;
+}
+
+.contact-title-box h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+/* grid layout */
+.contact-row {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.contact-left {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact-right {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-left: 18px;
+}
+
+/* form */
+.contact-form-renamed .form-group {
+    margin-bottom: 22px;
+}
+
+.contact-form-renamed label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.input-field-renamed {
+    width: 100%;
+    border: 1px solid #d0d0d0;
+    padding: 10px 12px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 0;
+    background: #fff;
+    height: 42px;
+    transition: .12s;
+}
+
+.input-field-renamed:focus {
+    border-color: #9d0f0f;
+    box-shadow: 0 0 0 3px rgba(243, 156, 18, .08);
+}
+
+textarea.input-field-renamed {
+    height: 300px;
+    resize: vertical;
+    padding-top: 12px;
+}
+
+/* button */
+.send-btn-renamed {
+    display: inline-block;
+    background: #9d0f0f;
+    color: #111;
+    padding: 12px 22px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .12s;
+}
+
+.send-btn-renamed:hover {
+    background: #111;
+    color: #fff;
+}
+
+/* right widgets */
+
+
+.contact-widget-box {
+    margin-bottom: 34px;
+}
+
+.contact-widget-box h3 {
+    font-size: 22px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.contact-widget-box h3:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    height: 3px;
+    background: #9d0f0f;
+}
+
+.contact-widget-box p {
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.contact-address-renamed p {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-address-renamed p i {
+    width: 28px;
+    text-align: center;
+    margin-right: 10px;
+    color: #9d0f0f;
+}
+
+.opening-hours-box {
+    border: 3px solid #9d0f0f;
+    padding: 25px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.opening-title {
+    font-family: "Great Vibes", serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.opening-hours-list p {
+    font-size: 16px;
+    margin: 20px 0;
+    color: #222;
+    line-height: 1.4;
+}
+
+/* responsive */
+@media (max-width:900px) {
+
+    .contact-left,
+    .contact-right {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .contact-title-box h2 {
+        font-size: 32px;
+    }
+
+    .contact-sub {
+        font-size: 30px;
+    }
+
+    textarea.input-field-renamed {
+        height: 220px;
+    }
+}

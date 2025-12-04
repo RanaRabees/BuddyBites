@@ -1,0 +1,244 @@
+/* --------------------------------------------------
+   LOADER OVERLAY
+-------------------------------------------------- */
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    animation: hideLoader 10s forwards;
+    /* Loader lasts 5s */
+}
+
+/* Horizontal Red Cubes Loader (FAST) */
+.spinner {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.spinner div {
+    width: 18px;
+    height: 18px;
+    background: #ff3030;
+    border-radius: 4px;
+
+    /* Faster speed (0.6s instead of 1.2s) */
+    animation: cubeBounce 0.8s infinite ease-in-out;
+}
+
+/* Staggered delays for smooth wave */
+.spinner div:nth-child(1) {
+    animation-delay: 0s;
+    background: #ff4d4d;
+}
+
+.spinner div:nth-child(2) {
+    animation-delay: 0.05s;
+    background: #ff3030;
+}
+
+.spinner div:nth-child(3) {
+    animation-delay: 0.10s;
+    background: #ff5b5b;
+}
+
+.spinner div:nth-child(4) {
+    animation-delay: 0.15s;
+    background: #ff3030;
+}
+
+.spinner div:nth-child(5) {
+    animation-delay: 0.20s;
+    background: #9d0f0f;
+}
+
+@keyframes cubeBounce {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-10px) scale(0.8);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* --------------------------------------------------
+   TYPING ANIMATION TEXT
+-------------------------------------------------- */
+
+.typing {
+    color: #9d0f0f;
+    font-size: 22px;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #8e9fc4;
+    width: 0ch;
+    animation: typing 2s steps(25) 0.4s forwards,
+        blink 2.7s infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0ch;
+    }
+
+    100% {
+        width: 25ch;
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        border-color: #8e9fc4;
+    }
+
+    50.1%,
+    100% {
+        border-color: transparent;
+    }
+}
+
+/* --------------------------------------------------
+   HIDE LOADER AFTER ANIMATION
+-------------------------------------------------- */
+@keyframes hideLoader {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* --------------------------------------------------
+   BOOK OPENING PAGE REVEAL
+-------------------------------------------------- */
+
+.page {
+    opacity: 0;
+    transform: scale(0.85) rotateY(45deg);
+    transform-origin: left center;
+    animation: bookOpen 5s ease-out 15s forwards;
+    /* starts after loader */
+}
+
+@keyframes bookOpen {
+    0% {
+        opacity: 0;
+        transform: scale(0.85) rotateY(45deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotateY(0deg);
+    }
+}
+
+/*==================
+ BUDDY-BITES COUNTER
+====================*/
+
+#bb-counter {
+    background: #ffffff;
+    padding: 70px 0;
+    width: 100%;
+}
+
+.bb-counter-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.bb-counter-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.bb-counter-grid li {
+    list-style: none;
+    width: 23%;
+    /* background: #fff; */
+    padding: 35px 20px;
+    border-radius: 14px;
+    text-align: center;
+    border: 2px solid #ff4d4d;
+    box-shadow: 0 8px 20px rgba(255, 77, 77, 0.15);
+    transition: 0.3s ease;
+}
+
+.bb-counter-grid li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(255, 77, 77, 0.25);
+}
+
+.bb-single-counter {
+    color: #d62828;
+}
+
+.bb-label {
+    font-size: 24px;
+    font-weight: 600;
+    color: #b30000;
+}
+
+.bb-single-counter h3 {
+    font-size: 48px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #ff1a1a;
+}
+
+.bb-single-counter h3 span {
+    font-size: 38px;
+}
+
+.bb-single-counter h3 sup {
+    font-size: 28px;
+    color: #ff6666;
+}
+
+.bb-single-counter p {
+    font-size: 17px;
+    margin-top: 5px;
+    color: #444;
+    letter-spacing: 1px;
+}
+
+/* Mobile Responsive */
+@media(max-width: 768px) {
+    .bb-counter-grid li {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 500px) {
+    .bb-counter-grid li {
+        width: 100%;
+    }
+}

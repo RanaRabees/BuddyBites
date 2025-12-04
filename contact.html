@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Buddy-Bites | Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/loader.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+<body>
+    <!-- Loader Component  -->
+    <div id="loader">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+        <div class="typing">
+            <h1>Welcome</h1>
+        </div>
+    </div>
+    <!-- Loader Component End -->
+
+    <!-- MOBILE NAV -->
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="./index.html">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="./about.html">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#food-menu-section">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="./contact.html">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+    <!-- END MOBILE NAV -->
+
+    <!-- BACK TO TOP BTN -->
+    <a href="./index.html" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <!-- END BACK TO TOP BTN -->
+
+    <!-- TOP NAVIGATION -->
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="./index.html">
+                <div class="logo">Buddy Bites</div>
+            </a>
+
+            <div class="menu h-xs">
+                <a href="./index.html">
+                    <div class="menu-item active">Home</div>
+                </a>
+                <a href="./about.html">
+                    <div class="menu-item">About</div>
+                </a>
+                <a href="./menu.html">
+                    <div class="menu-item">Menu</div>
+                </a>
+                <a href="./contact.html">
+                    <div class="menu-item">Contact</div>
+                </a>
+            </div>
+
+            <div class="right-menu">
+                <div class="cart-btn"><i class='bx bx-cart-alt'></i></div>
+            </div>
+        </div>
+    </div>
+    <!-- END TOP NAVIGATION -->
+
+    <!-- Contact Section -->
+    <section id="contact-sec-renamed">
+        <div class="contact-sec-wrapper">
+
+            <div class="contact-title-box">
+                <span class="contact-sub">Get In Touch</span>
+                <h2>Contact Us</h2>
+            </div>
+
+            <div class="contact-content-box">
+                <div class="contact-row">
+
+                    <!-- LEFT -->
+                    <div class="contact-left">
+                        <form method="post" action="mailer.php" class="contact-form-renamed">
+
+                            <div class="form-group">
+                                <label>Your Name</label>
+                                <input class="input-field-renamed" type="text" name="name" placeholder="Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input class="input-field-renamed" type="email" name="email" placeholder="Email"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Subject</label>
+                                <input class="input-field-renamed" type="text" name="subject" placeholder="Subject"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea class="input-field-renamed" name="message" placeholder="Type Your Message"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="send-btn-renamed">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="contact-right">
+                        <div class="contact-right-wrapper">
+
+                            <div class="contact-widget-box">
+                                <h3>Office Address</h3>
+                                <p>Buddy-Bites — where flavor meets happiness.</p>
+
+                                <address class="contact-address-renamed">
+                                    <p><i class="fa fa-phone"></i> +92 300 1234567</p>
+                                    <p><i class="fa fa-envelope"></i> support@buddy-bites.pk</p>
+                                    <p><i class="fa fa-map-marker-alt"></i> 456 Food Street, Islamabad</p>
+                                </address>
+                            </div>
+
+                            <div class="contact-widget-box opening-hours-box">
+                                <h3 class="opening-title">Opening Hours</h3>
+
+                                <div class="opening-hours-list">
+                                    <p><strong>MONDAY & TUESDAY</strong><br>9:00 AM – 4:00 PM</p>
+
+                                    <p><strong>WEDNESDAY & THURSDAY</strong><br>9:00 AM – MIDNIGHT</p>
+
+                                    <p><strong>FRIDAY & SATURDAY</strong><br>9:00 AM – MIDNIGHT</p>
+
+                                    <p><strong>SUNDAY</strong><br>9:00 AM – 11:00 PM</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Contact Section Ends -->
+
+    <!-- MAP -->
+    <h2 class="center_heading">Our Office</h2>
+    <div class="map">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-7">
+                    <div class="map__inner">
+                        <h6>Buddy‑Bites</h6>
+                        <p>“Taste the Joy, Share the Moment!”</p>
+                        <ul>
+                            <li>Main Street, Rawalpindi, Punjab, Pakistan</li>
+                            <li>support@buddy-bites.pk</li>
+                            <li>+92 300 123 4567</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map__iframe">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53077.37431409262!2d72.79701356021529!3d33.751985022696694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfa4180e193fcd%3A0x825749538d73641e!2sTaxila%2C%20Pakistan!5e0!3m2!1sen!2s!4v1764602321376!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!-- MAP END -->
+    <!-- FOOTER SECTION -->
+    <section class="footer bg-img" style="
+    background-image: url('./images/footerpic.jpg');
+    background-size: 100% 100%;
+">
+        <div class="container" style="
+              inset: 0;
+        background: rgba(0,0,0,0.55);
+    ">
+            <div class="row">
+
+                <!-- Brand Column -->
+                <div class="col-6 col-xs-12">
+                    <h1>Buddy-Bites</h1>
+                    <p class="tagline">“Where Flavor Meets Happiness.”</p>
+                    <p>
+                        Buddy-Bites is your sanctuary for exceptional taste, comforting flavors, and heartfelt
+                        moments.
+                        We believe that great food has the power to transform your day, and every bite we serve is
+                        designed to elevate your mood, refresh your spirit, and make the ordinary feel
+                        extraordinary.
+                    </p>
+                    <p class="footer-contact">
+                        Email: <a href="mailto:rrabeeshussain@gmail.com">support@buddy-bites.pk</a><br>
+                        Website: <a href="https://ranarabees.vercel.app">buddy-bites.com</a>
+                    </p>
+                </div>
+
+                <!-- Links Column -->
+                <div class="col-2 col-xs-12">
+                    <h2>Explore</h1>
+                        <p><a href="#">Our Chefs</a></p>
+                        <p><a href="#">Menu</a></p>
+                        <p><a href="#">Contact</a></p>
+                        <p><a href="#">Special Offers</a></p>
+                </div>
+
+                <!-- Subscribe Column -->
+                <div class="col-4 col-xs-12">
+                    <h2>Stay Connected</h1>
+                        <p>
+                            Join our foodie family! Get the latest deals, flavor drops, and tasty surprises—straight
+                            to
+                            your inbox.
+                        </p>
+                        <div class="input-group">
+                            <input type="text" placeholder="Enter your email">
+                            <button>Subscribe</button>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- END FOOTER SECTION -->
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
